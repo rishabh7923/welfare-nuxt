@@ -2,19 +2,18 @@
   <main>
     <Header />
     <!-- Slides -->
-    <div id="slides" class="carousel container" data-bs-ride="carousel">
+    <div id="slides" class="carousel slide container" data-bs-ride="carousel">
       <!-- The slideshow/carousel -->
-      <div class="carousel-inner carousel-fade mt-2 rounded m-auto">
+      <div class="carousel-inner mt-2 rounded m-auto">
         <div class="carousel-item active">
-          <img src="http://welfareinternationalschool.org/images/gallery/7.jpg" alt="first"
-            class="d-block w-100 img-container">
+          <img src="~assets/images/2.jpg" alt="first" class="d-block w-100 img-container">
           <div class="carousel-caption d-none d-md-block">
             <h5>EDUCATION MATTERS</h5>
           </div>
         </div>
 
         <div class="carousel-item">
-          <img src="http://welfareinternationalschool.org/images/gallery/4.jpg" alt="second" class="d-block w-100">
+          <img src="~assets/images/3.jpeg" alt="second" class="d-block w-100">
 
           <div class="carousel-caption d-none d-md-block">
             <h5>OUR MISSION</h5>
@@ -22,7 +21,7 @@
         </div>
 
         <div class="carousel-item">
-          <img src="http://welfareinternationalschool.org/images/gallery/3.jpg" alt="third" class="d-block w-100">
+          <img src="~assets/images/5.jpeg" alt="third" class="d-block w-100">
           <div class="carousel-caption d-none d-md-block">
             <h5>LEARN AND GROW</h5>
           </div>
@@ -33,7 +32,7 @@
     <!-- About school section -->
     <div class="mt-3 rounded p-3 row m-auto container bg-stylish" id="about-school">
       <div class="col-md-4">
-        <img src="https://welfareinternationalschool.org/images/about.jpg" alt="My Image" class="img-fluid rounded">
+        <img src="~assets/images/6.png" alt="My Image" class="img-fluid rounded">
       </div>
       <div class="col-md-7">
         <p class="mt-2">
@@ -212,7 +211,7 @@
         </div>
       </div>
     </div>
-    
+
     <Footer />
   </main>
 </template>
@@ -223,6 +222,12 @@ export default {
   head: {
     link: [
       { rel: "stylesheet", href: "/css/index.css" }
+    ],
+    script: [
+      {
+        src: "/js/bootstrap.bundle.min.js",
+        type: "text/javascript"
+      }
     ]
   }
 }
