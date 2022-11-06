@@ -6,14 +6,14 @@
       <!-- The slideshow/carousel -->
       <div class="carousel-inner mt-2 rounded m-auto">
         <div class="carousel-item active">
-          <img src="~assets/images/2.jpg" alt="first" class="d-block w-100 img-container">
+          <nuxt-img format="webp" src="2.jpg" alt="sports" class="d-block w-100 img-container" />
           <div class="carousel-caption d-none d-md-block">
             <h5>EDUCATION MATTERS</h5>
           </div>
         </div>
 
         <div class="carousel-item">
-          <img src="~assets/images/3.jpeg" alt="second" class="d-block w-100">
+          <nuxt-img format="webp" src="3.jpeg" alt="earth day" class="d-block w-100" />
 
           <div class="carousel-caption d-none d-md-block">
             <h5>OUR MISSION</h5>
@@ -21,7 +21,7 @@
         </div>
 
         <div class="carousel-item">
-          <img src="~assets/images/5.jpeg" alt="third" class="d-block w-100">
+          <nuxt-img format="webp" src="5.jpeg" alt="independence day" class="d-block w-100" />
           <div class="carousel-caption d-none d-md-block">
             <h5>LEARN AND GROW</h5>
           </div>
@@ -32,7 +32,7 @@
     <!-- About school section -->
     <div class="mt-3 rounded p-3 row m-auto container bg-stylish" id="about-school">
       <div class="col-md-4">
-        <img src="~assets/images/6.png" alt="My Image" class="img-fluid rounded">
+        <nuxt-img format="webp" src="6.png" alt="School Front" class="img-fluid rounded" />
       </div>
       <div class="col-md-7">
         <p class="mt-2">
@@ -52,7 +52,7 @@
           <i class="fa fa-quote-left fa-pull-left"></i>Education is matter of faith and trust not of money and prestige.
         </p>
 
-        <a href="#" class="button ps-4 pe-4 float-end readmore rounded">Read More</a>
+        <a href="about" class="button ps-4 pe-4 float-end readmore rounded">Read More</a>
       </div>
     </div>
 
@@ -62,7 +62,8 @@
       <div class="row row-cols-1 row-cols-md-3 g-3">
         <div class="col-md-5">
           <div class="card h-100">
-            <img src="~assets/images/2.jpg" class="card-img" alt=".." style=" height: 100%; object-fit: cover;">
+            <nuxt-img format="webp" src="2.jpg" class="card-img" alt="sports"
+              style="height: 100%; object-fit: cover;" />
 
             <div class="card-img-overlay text-white text-end" style="opacity:0.8;">
               <p class="badge">SPORTS</p>
@@ -72,8 +73,7 @@
 
         <div class="col-md-3">
           <div class="card h-100">
-            <img src="https://christelhouse.org/images/stories/1501087250_INDIA-LAB-RETOUCHED.jpg" class="card-img"
-              alt=".." style="height: 100%; object-fit: cover;">
+            <nuxt-img format="webp" src="1.jpg" class="card-img" alt=".." style="height: 100%; object-fit: cover;" />
 
             <div class="card-img-overlay text-white text-end" style="opacity:0.8;">
               <p class="badge">COMPUTER LAB</p>
@@ -83,8 +83,7 @@
 
         <div class="col-md-4">
           <div class="card h-100">
-            <img src="http://regionalbikeplan.org/wp-content/uploads/2019/02/Music-Room-img5-1.jpg" class="card-img"
-              alt=".." style=" height: 100%; object-fit: cover;">
+            <nuxt-img format="webp" src="2.jpg" class="card-img" alt=".." style=" height: 100%; object-fit: cover;" />
 
             <div class="card-img-overlay text-white text-end" style="opacity:0.8;">
               <p class="badge">MUSIC</p>
@@ -94,9 +93,7 @@
 
         <div class="col-md-3 w-100">
           <div class="card h-100">
-            <img
-              src="https://images.edexlive.com/uploads/user/imagelibrary/2019/10/14/original/indian-asian-boy-swimming-spool-260nw-152203244.jpg"
-              class="card-img" alt=".." style=" height: 15rem; object-fit: cover;">
+            <nuxt-img format="webp" src="3.jpeg" class="card-img" alt=".." style=" height: 15rem; object-fit: cover;" />
 
             <div class="card-img-overlay text-white text-end" style="opacity:0.8;">
               <p class="badge">SWIMMING</p>
@@ -112,7 +109,7 @@
 
         <div class="col">
           <div class="card h-100">
-            <img src="~assets/images/3.jpeg" class="card-img" alt="...">
+            <nuxt-img format="webp" src="3.jpeg" class="card-img" alt="..."/>
 
             <div class="card-img-overlay">
               <h5 class="card-title badge">Earth Day</h5>
@@ -123,7 +120,7 @@
 
         <div class="col">
           <div class="card h-100">
-            <img src="~assets/images/4.jpeg" class="card-img" alt="...">
+            <nuxt-img format="webp" src="4.jpeg" class="card-img" alt="..." />
 
             <div class="card-img-overlay">
               <h5 class="card-title badge">Dusheraa</h5>
@@ -134,7 +131,7 @@
 
         <div class="col">
           <div class="card h-100">
-            <img src="~assets/images/5.jpeg" class="card-img" alt="...">
+            <nuxt-img format="webp" src="5.jpeg" class="card-img" alt="..."/>
 
             <div class="card-img-overlay">
               <h5 class="card-title badge">Independence Day</h5>
@@ -150,7 +147,7 @@
       <div id="contact-form" class="rounded mt-2 p-3 bg-stylish">
         <div class="row g-2">
           <div class="col">
-            <img class="float-start rounded img-fluid" src="~assets/images/1.jpg" alt="Enterance Image">
+            <nuxt-img format="webp" class="float-start rounded img-fluid" src="1.jpg" alt="Enterance Image"/>
           </div>
 
           <div class="col-md-8">
