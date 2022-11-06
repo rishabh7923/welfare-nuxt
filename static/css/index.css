@@ -1,0 +1,75 @@
+/* Slides which shows school images */
+.carousel {
+    padding: 0px;
+}
+
+.carousel-item img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    text-align: right;
+    top: 18rem;
+    width: 140%;
+}
+
+.carousel-caption h5 {
+    background-color: var(--primary);
+    display: inline;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 2px;
+}
+
+/* About School Section */
+
+#about-school img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contact Us */
+
+#contact-form {
+    background-color: var(--gray);
+}
+
+#contact-form img {
+    height: 480px;
+    background-size: cover;
+    width: 406px;
+    object-fit: cover;
+}
+
+/* Extras */
+.badge {
+    font-size: 1rem;
+    color: white;
+    background-color: var(--primary);
+    display: inline;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+.button {
+    background-color: var(--primary);
+    border: none;
+    color: var(--gray);
+    padding: 10px;
+    text-decoration: none;
+}
+
+.button:focus, .button:hover {
+    color: white;
+}
+
+
+/** Media */
+
+@media (max-width: 575.98px) {
+    .carousel {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,25 @@
+:root {
+    --gray: #eeeeee;
+    --primary: #009ed6;
+}
+
+body,
+html {
+    background-color: #ffffff;
+    background-size: 4px 4px;
+    background-image: repeating-linear-gradient(45deg, #eeeeee 0, #eeeeee 0.4px, #ffffff 0, #ffffff 50%);
+}
+
+.underline {
+    display: inline;
+    border-bottom: 3px solid var(--primary);
+    border-image: linear-gradient(0.25turn, #00b9fa, var(--primary), #549bb5);
+    border-image-slice: 1;
+}
+
+.bg-stylish {
+    background-color: #eeeeee;
+    opacity: 0.8;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #eeeeee 9px),
+        repeating-linear-gradient(#ffffff55, #ffffff);
+}
