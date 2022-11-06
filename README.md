@@ -1,4 +1,5 @@
 # welfare-nuxt
+.
 
 ## Build Setup
 
