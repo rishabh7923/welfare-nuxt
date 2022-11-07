@@ -1,20 +1,29 @@
 /* Slides which shows school images */
 #slides {
     padding: 0px;
+    margin-top: 15px;
 }
 
-.carousel-item img {
+#slides img {
     height: 350px;
     object-fit: cover;
 }
 
-.carousel-caption {
-    text-align: right;
+div.carousel-caption {
+    left: 0%;
+    right: 0%;
+    width: 100%;
     top: 18rem;
-    width: 140%;
+    text-align: right;
+    margin-right: 20px;
+    padding-right: 10px;
 }
 
-.carousel-caption h5 {
+.carousel-inner {
+    border-radius: 5px;
+}
+
+#slides h3 {
     background-color: var(--primary);
     display: inline;
     padding-left: 20px;
@@ -71,5 +80,29 @@
 @media (max-width: 575.98px) {
     #slides {
         padding: 10px;
+    }
+
+    #slides h3 {
+        font-size: 1rem;
+    }
+
+    div.carousel-caption {
+        left: 0%;
+        right: 0%;
+        width: 100%;
+        top: 18rem;
+        text-align: center;
+        margin-right: 20px;
+        padding-right: 10px;
+    }
+
+    #slides.container {
+        max-width: 100%;
+        padding: 0px;
+        margin: 0px
+    }
+
+    .carousel-inner {
+        border-radius: unset;
     }
 }

@@ -2,31 +2,21 @@
   <main>
     <Header />
     <!-- Slides -->
-    <div id="slides" class="carousel slide container" data-bs-ride="carousel">
-      <!-- The slideshow/carousel -->
-      <div class="carousel-inner mt-2 rounded m-auto">
-        <div class="carousel-item active">
-          <nuxt-img format="webp" src="2.jpg" alt="sports" class="d-block w-100 img-container" />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>EDUCATION MATTERS</h5>
-          </div>
-        </div>
+    <div id="slides" class="container">
+      <b-carousel class="carousel-fade" id="carousel" :interval="4000" img-width="1024" img-height="480" controls>
 
-        <div class="carousel-item">
-          <nuxt-img format="webp" src="3.jpeg" alt="earth day" class="d-block w-100" />
+        <b-carousel-slide img-src="~assets/images/2.jpg">
+          <h3>EDUCATION MATTERS</h3>
+        </b-carousel-slide>
 
-          <div class="carousel-caption d-none d-md-block">
-            <h5>OUR MISSION</h5>
-          </div>
-        </div>
+        <b-carousel-slide img-src="~assets/images/5.jpeg">
+          <h3>OUR MISSION</h3>
+        </b-carousel-slide>
 
-        <div class="carousel-item">
-          <nuxt-img format="webp" src="5.jpeg" alt="independence day" class="d-block w-100" />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>LEARN AND GROW</h5>
-          </div>
-        </div>
-      </div>
+        <b-carousel-slide img-src="~assets/images/3.jpeg">
+          <h3>LEARN AND GROW</h3>
+        </b-carousel-slide>
+      </b-carousel>
     </div>
 
     <!-- About school section -->
@@ -109,7 +99,7 @@
 
         <div class="col">
           <div class="card h-100">
-            <nuxt-img format="webp" src="3.jpeg" class="card-img" alt="..."/>
+            <nuxt-img format="webp" src="3.jpeg" class="card-img" alt="..." />
 
             <div class="card-img-overlay">
               <h5 class="card-title badge">Earth Day</h5>
@@ -131,7 +121,7 @@
 
         <div class="col">
           <div class="card h-100">
-            <nuxt-img format="webp" src="5.jpeg" class="card-img" alt="..."/>
+            <nuxt-img format="webp" src="5.jpeg" class="card-img" alt="..." />
 
             <div class="card-img-overlay">
               <h5 class="card-title badge">Independence Day</h5>
@@ -147,7 +137,7 @@
       <div id="contact-form" class="rounded mt-2 p-3 bg-stylish">
         <div class="row g-2">
           <div class="col">
-            <nuxt-img format="webp" class="float-start rounded img-fluid" src="1.jpg" alt="Enterance Image"/>
+            <nuxt-img format="webp" class="float-start rounded img-fluid" src="1.jpg" alt="Enterance Image" />
           </div>
 
           <div class="col-md-8">
@@ -219,12 +209,6 @@ export default {
   head: {
     link: [
       { rel: "stylesheet", href: "/css/index.css" }
-    ],
-    script: [
-      {
-        src: "/js/bootstrap.bundle.min.js",
-        type: "text/javascript"
-      }
     ]
   }
 }

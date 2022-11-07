@@ -21,8 +21,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/css/main.css',
-    '~/assets/css/bootstrap.min.css'
+    '~/assets/css/main.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -35,7 +34,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     "@nuxtjs/fontawesome",
-    '@nuxt/image'
+    '@nuxt/image',
+    'bootstrap-vue/nuxt'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -51,6 +51,6 @@ export default {
   },
 
   fontawesome: {
-    icons: { solid: ['faSchool', 'faImage', 'faCircleDown', 'faSquarePhone'] }
+    icons: { solid: ['faSchool', 'faImage', 'faCircleDown', 'faSquarePhone', 'faBars'] }
   },
 }

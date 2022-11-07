@@ -26,7 +26,7 @@
             </div>
 
             <div class="col-md-5 ml-auto">
-                <img src="~assets/images/6.png" class="img-fluid rounded" style="width:100%;">
+                <nuxt-img format="webp" src="6.png" class="img-fluid rounded" style="width:100%;"/>
             </div>
 
             <div class="mt-3">
@@ -50,14 +50,14 @@
 
 
         <div class="mt-3 row m-auto container bg-stylish p-3 rounded">
-            <div class="col-md-4">
-                <img src="~assets/images/7.jpg" class="img-fluid rounded"
-                    style="width:100%;height:100%;object-fit: cover;">
+            <div class="col-md-4 pb-1">
+                <nuxt-img format="webp" src="7.jpg" class="img-fluid rounded"
+                    style="width:100%;height:100%;object-fit: cover;"/>
             </div>
 
             <div class="col-md-8">
                 <h3 class="underline">OBJECTIVES</h3>
-                <p class="pt-3">
+                <p class="pt-2">
                     Welfrare Mission believes in experimental education that is based on continuous and creative process
                     by
                     adopting latest methods and techniques to create a permanent understanding of the curriculum. The
@@ -111,8 +111,8 @@
             </div>
 
             <div class="col-md-5">
-                <img src="~assets/images/8.jpg" class="img-fluid rounded"
-                    style="width:100%;height:15rem;object-fit: cover;">
+                <nuxt-img format="webp" src="8.jpg" class="img-fluid rounded"
+                    style="width:100%;height:15rem;object-fit: cover;"/>
             </div>
 
         </div>
