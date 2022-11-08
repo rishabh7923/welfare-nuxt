@@ -26,7 +26,7 @@
             </div>
 
             <div class="col-md-5 ml-auto">
-                <nuxt-img width="800" height="530" format="webp" src="6.jpg" class="img-fluid rounded" style="width:100%;" alt="School" />
+                <img src="https://i.imgur.com/woRlMqd.jpg" class="img-fluid rounded" style="width:100%;" alt="School">
             </div>
 
             <div class="mt-3">
@@ -51,8 +51,8 @@
 
         <div class="mt-3 row m-auto container bg-stylish p-3 rounded">
             <div class="col-md-4 pb-1">
-                <nuxt-img width="960" height="1280" alt="Kids Joining Hands" format="webp" src="7.jpg" class="img-fluid rounded"
-                    style="width:100%;height:100%;object-fit: cover;"/>
+                <img src="https://i.imgur.com/md5d7hw.jpg" alt="Kids Joining Hands" class="img-fluid rounded"
+                    style="width:100%;height:100%;object-fit: cover;">
             </div>
 
             <div class="col-md-8">
@@ -111,8 +111,8 @@
             </div>
 
             <div class="col-md-5">
-                <nuxt-img weight="1280" height="960" alt="School Campus" format="webp" src="8.jpg" class="img-fluid rounded"
-                    style="width:100%;height:15rem;object-fit: cover;"/>
+                <img alt="School Campus" src="https://i.imgur.com/BRp2MUi.jpg" class="img-fluid rounded"
+                    style="width:100%;height:15rem;object-fit: cover;">
             </div>
         </div>
         <Footer />

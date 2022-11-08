@@ -5,15 +5,15 @@
     <div id="slides" class="container">
       <b-carousel class="carousel-fade" id="carousel" :interval="4000" img-width="1024" img-height="480" controls>
 
-        <b-carousel-slide img-alt="Education Matters" img-width="1280" img-height="960" img-src="~assets/images/2.jpg">
+        <b-carousel-slide img-alt="Education Matters" img-src="https://i.imgur.com/yJwGLPf.jpg">
           <h3>EDUCATION MATTERS</h3>
         </b-carousel-slide>
 
-        <b-carousel-slide img-alt="Our Mission" img-width="1280" img-height="960" img-src="~assets/images/5.jpg">
+        <b-carousel-slide img-alt="Our Mission" img-src="https://i.imgur.com/3rNlkKc.jpg">
           <h3>OUR MISSION</h3>
         </b-carousel-slide>
 
-        <b-carousel-slide img-alt="Learn And Grow" img-width="1280" img-height="960" img-src="~assets/images/3.jpg">
+        <b-carousel-slide img-alt="Learn And Grow" img-src="https://i.imgur.com/Rlq7L41.jpg">
           <h3>LEARN AND GROW</h3>
         </b-carousel-slide>
       </b-carousel>
@@ -22,7 +22,7 @@
     <!-- About school section -->
     <div class="mt-3 rounded p-3 row m-auto container bg-stylish" id="about-school">
       <div class="col-md-4">
-        <nuxt-img format="webp" width="800" height="530" src="6.jpg" alt="School Main Door" class="img-fluid rounded" />
+        <img src="https://i.imgur.com/woRlMqd.jpg" alt="School Main Door" class="img-fluid rounded">
       </div>
       <div class="col-md-7">
         <p class="mt-2">
@@ -52,8 +52,8 @@
       <div class="row row-cols-1 row-cols-md-3 g-3">
         <div class="col-md-5">
           <div class="card h-100">
-            <nuxt-img width="1280" height="900" format="webp" src="2.jpg" class="card-img" alt="Sports"
-              style="height: 100%; object-fit: cover;" />
+            <img src="https://i.imgur.com/8Nxv58N.jpg" class="card-img" alt="Sports"
+              style="height: 100%; object-fit: cover;">
 
             <div class="card-img-overlay text-white text-end" style="opacity:0.8;">
               <p class="badge">SPORTS</p>
@@ -63,7 +63,7 @@
 
         <div class="col-md-3">
           <div class="card h-100">
-            <nuxt-img width="900" height="1280" format="webp" src="1.jpg" class="card-img" alt="Computer Lab" style="height: 100%; object-fit: cover;" />
+            <img src="https://i.imgur.com/0mYI9Yl.jpg" class="card-img" alt="Computer Lab" style="height: 100%; object-fit: cover;" />
 
             <div class="card-img-overlay text-white text-end" style="opacity:0.8;">
               <p class="badge">COMPUTER LAB</p>
@@ -73,36 +73,36 @@
 
         <div class="col-md-4">
           <div class="card h-100">
-            <nuxt-img width="1280" height="900" format="webp" src="4.jpg" class="card-img" alt="Music Class" style="height: 100%; object-fit: cover;" />
+            <img src="https://i.imgur.com/8ScC3ix.jpg" class="card-img" alt="Lab class" style="height: 100%; object-fit: cover;">
 
             <div class="card-img-overlay text-white text-end" style="opacity:0.8;">
-              <p class="badge">MUSIC</p>
+              <p class="badge">LABORATORIES</p>
             </div>
           </div>
         </div>
 
         <div class="col-md-3 w-100">
           <div class="card h-100">
-            <nuxt-img width="1280" height="900" format="webp" src="3.jpg" class="card-img" alt="Swimming" style=" height: 15rem; object-fit: cover;" />
+            <img src="https://i.imgur.com/UEOeBb8.jpg" class="card-img" alt="Kids playing" style=" height: 15rem; object-fit: cover;" />
 
             <div class="card-img-overlay text-white text-end" style="opacity:0.8;">
-              <p class="badge">SWIMMING</p>
+              <p class="badge">PLAYGROUND</p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container mt-3">
+    <div id="events" class="container mt-3">
       <h4>Events</h4>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
 
         <div class="col">
           <div class="card h-100">
-            <nuxt-img format="webp" src="3.jpg" class="card-img" alt="Earth Day" />
+            <img src="https://i.imgur.com/HepwNJE.jpg" class="card-img" alt="Kids Dressed on Janmashtami" >
 
             <div class="card-img-overlay">
-              <h5 class="card-title badge">Earth Day</h5>
+              <h5 class="card-title badge">Janmashtami</h5>
             </div>
           </div>
         </div>
@@ -110,10 +110,10 @@
 
         <div class="col">
           <div class="card h-100">
-            <nuxt-img format="webp" src="4.jpg" class="card-img" alt="Dusheraa" />
+            <img src="https://i.imgur.com/2PqkKcw.jpg" class="card-img" alt="National Unity Dat">
 
             <div class="card-img-overlay">
-              <h5 class="card-title badge">Dusheraa</h5>
+              <h5 class="card-title badge">Natiional Unity Day</h5>
             </div>
           </div>
         </div>
@@ -121,10 +121,20 @@
 
         <div class="col">
           <div class="card h-100">
-            <nuxt-img format="webp" src="5.jpg" class="card-img" alt="Independence Day" />
+            <img src="https://i.imgur.com/tv7DWcv.jpg" class="card-img" alt="Independence Day">
 
             <div class="card-img-overlay">
               <h5 class="card-title badge">Independence Day</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://i.imgur.com/MbtpXW6.jpg" class="card-img" alt="Dussehra">
+
+            <div class="card-img-overlay">
+              <h5 class="card-title badge">Dussehra</h5>
             </div>
           </div>
         </div>
@@ -137,7 +147,7 @@
       <div id="contact-form" class="rounded mt-2 p-3 bg-stylish">
         <div class="row g-2">
           <div class="col">
-            <nuxt-img width="960" height="1280" format="webp" class="float-start rounded img-fluid" src="1.jpg" alt="Enterance Image" />
+            <img class="float-start rounded img-fluid" src="https://i.imgur.com/u33G1BE.jpg" alt="Enterance Image" />
           </div>
 
           <div class="col-md-8">

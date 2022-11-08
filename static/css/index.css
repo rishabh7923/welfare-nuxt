@@ -38,6 +38,13 @@ div.carousel-caption {
     object-fit: cover;
 }
 
+/* Events */
+
+#events img {
+    object-fit: cover;
+    height: 15rem;
+}
+
 /* Contact Us */
 
 #contact-form {
@@ -70,7 +77,8 @@ div.carousel-caption {
     text-decoration: none;
 }
 
-.button:focus, .button:hover {
+.button:focus,
+.button:hover {
     color: white;
 }
 

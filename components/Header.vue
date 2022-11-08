@@ -25,7 +25,7 @@
         <nav class="navbar navbar-expand m-auto">
             <div class="container">
                 <a class="navbar-brand mr-10" href="#">
-                    <nuxt-img format="webp" src="logo.png" />
+                    <img src="~assets/images/logo.png" />
                 </a>
 
                 <div class="navbar-nav ms-auto">
