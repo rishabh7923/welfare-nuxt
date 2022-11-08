@@ -46,9 +46,19 @@
       </div>
     </div>
 
+    <div class="mt-3 rounded p-3 m-auto container bg-stylish" id="about-school">
+        <p class="mt-2 fw">
+          The Central Board of Secondary Education (CBSE) is a national level board of education in India for public and private schools, controlled and managed by the Government of India
+          which is why <span class="fw-bold">Welfare Mission International School is officially affiliated to CBSE Board, New Delhi</span>
+          and affiliation number is 2131971
+        </p>
+    </div>
+
     <!-- Facilities -->
     <div id="facility" class="container mt-3">
-      <h4>Facilities</h4>
+      <h4 class="heading">Facilities</h4>
+      <div class="divider"><span></span></div>
+
       <div class="row row-cols-1 row-cols-md-3 g-3">
         <div class="col-md-5">
           <div class="card h-100">
@@ -93,8 +103,17 @@
       </div>
     </div>
 
+    <!-- Affiliated to CBSE -->
+
+
+
+
+
+
     <div id="events" class="container mt-3">
-      <h4>Events</h4>
+      <h4 class="heading">Events</h4>
+      <div class="divider"><span></span></div>
+
       <div class="row row-cols-1 row-cols-md-4 g-4">
 
         <div class="col">
@@ -143,7 +162,8 @@
     </div>
 
     <div class="container mt-3">
-      <h3>Contact Us</h3>
+      <h3 class="heading">Contact Us</h3>
+      <div class="divider"><span></span></div>
       <div id="contact-form" class="rounded mt-2 p-3 bg-stylish">
         <div class="row g-2">
           <div class="col">

@@ -2,15 +2,15 @@
 
     <div id="header" class="container" style="padding: 0px 0px">
         <div id="contact-strip">
-            <a href="/admission" class="tnav-item">
+            <NuxtLink to="/admission" class="tnav-item">
                 <font-awesome-icon icon="school" style="font-size: 19px" />
                 <span class="fw-bold pe-2">ADMISSION /</span>
-            </a>
+            </NuxtLink>
 
-            <a href="/gallery" class="tnav-item">
+            <NuxtLink to="/gallery" class="tnav-item">
                 <font-awesome-icon icon="image" style="font-size: 19px" />
                 <span class="fw-bold pe-2">GALLERY /</span>
-            </a>
+            </NuxtLink>
 
             <a href="http://welfareinternationalschool.org/downloads/prospects.pdf" class="tnav-item">
             <font-awesome-icon icon="circle-down" style="font-size: 19px" />
@@ -24,15 +24,15 @@
 
         <nav class="navbar navbar-expand m-auto">
             <div class="container">
-                <a class="navbar-brand mr-10" href="#">
+                <a class="navbar-brand mr-10" href="/">
                     <img src="~assets/images/logo.png" />
                 </a>
 
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-item nav-link" href="/">Home</a>
-                    <a class="nav-item nav-link" href="/about">About Us</a>
-                    <a class="nav-item nav-link" href="/feedback">Feedback</a>
-                    <a class="nav-item nav-link" href="/tour">Tour</a>
+                    <NuxtLink class="nav-item nav-link" to="/">Home</NuxtLink>
+                    <NuxtLink class="nav-item nav-link" to="/about/">About Us</NuxtLink>
+                    <NuxtLink class="nav-item nav-link" to="/feedback/">Feedback</NuxtLink>
+                    <NuxtLink class="nav-item nav-link" to="/tour/">Tour</NuxtLink>
                 </div>
                 <div id="mobile-nav">
                     <font-awesome-icon class="m-2" v-b-toggle.sidebar-right icon="bars"
@@ -164,3 +164,13 @@ div.navbar-nav .active {
     }
 }
 </style>
+
+<script>
+export default {
+    mounted() {
+        const element = document.querySelector(`.nav-item[href='${document.location.pathname}']`)
+        element?.classList.add("active")
+    }
+}
+
+</script>

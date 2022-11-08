@@ -1,7 +1,12 @@
 <template>
     <main>
         <Header />
-        <div id="gallery" class="container mt-5 bg-stylish rounded pb-3">
+        <div class="container pt-3">
+            <h4 class="heading">GALLERY OF MEMORIES</h4>
+            <div class="divider"><span></span></div>
+        </div>
+
+        <div id="gallery" class="container bg-stylish rounded pb-3 pt-2">
             <div class="row row-cols-1 row-cols-md-5 g-4">
                 <div class="col" v-for="index in 20">
                     <a target="_blank" :href="images[index].replace('m.', '.')"><img v-if="images[index + (page * 20)]" style="height:10rem;width: 100%;object-fit:cover;"
@@ -11,8 +16,8 @@
             </div>
         </div>
         <div class="container pagination justify-content-center pt-3 m-auto p-1">
-            <button :disabled="images[(page - 1) * 20] ? false : true" @click="page = page - 1">Previous Page</button>
-            <button :disabled="images[(page + 1) * 20] ? false : true" @click="page = page + 1">Next Page</button>
+            <b-button :disabled="images[(page - 1) * 20] ? false : true" @click="previous">Previous Page</b-button>
+            <b-button :disabled="images[(page + 1) * 20] ? false : true" @click="next">Next Page</b-button>
         </div>
 
         <Footer />
@@ -31,10 +36,6 @@
     width: 100%;
     margin: 2px;
 }
-
-.pagination button:disabled {
-    filter: brightness(90%)
-}
 </style>
 
 <script>
@@ -48,6 +49,17 @@ export default {
     mounted() {
         this.page = this.$route.query.page ? this.$route.query.page - 1 : 0
         console.log((this.page * 10) + 0)
+    },
+    methods: {
+        previous() {
+            this.page = this.page - 1
+            window.scrollTo(0,0)
+        },
+
+        next() {
+            this.page = this.page + 1
+            window.scrollTo(0,0)
+        }
     }
 }
 </script>
