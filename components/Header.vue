@@ -24,15 +24,16 @@
 
         <nav class="navbar navbar-expand m-auto">
             <div class="container">
-                <a class="navbar-brand mr-10" href="/">
+                <NuxtLink class="navbar-brand mr-10" to="/">
                     <img src="~assets/images/logo.png" />
-                </a>
+                </NuxtLink>
 
                 <div class="navbar-nav ms-auto">
-                    <NuxtLink class="nav-item nav-link" to="/">Home</NuxtLink>
-                    <NuxtLink class="nav-item nav-link" to="/about/">About Us</NuxtLink>
-                    <NuxtLink class="nav-item nav-link" to="/feedback/">Feedback</NuxtLink>
-                    <NuxtLink class="nav-item nav-link" to="/tour/">Tour</NuxtLink>
+                    <NuxtLink class="nav-item nav-link" to="/">HOME</NuxtLink>
+                    <NuxtLink class="nav-item nav-link" to="/about/">ABOUT</NuxtLink>
+                    <NuxtLink class="nav-item nav-link" to="/feedback/">FEEDBACK</NuxtLink>
+                    <NuxtLink class="nav-item nav-link" to="/tour/">TOUR</NuxtLink>
+                    <NuxtLink class="nav-item nav-link" to="/contact/">CONTACT</NuxtLink>
                 </div>
                 <div id="mobile-nav">
                     <font-awesome-icon class="m-2" v-b-toggle.sidebar-right icon="bars"

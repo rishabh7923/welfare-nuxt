@@ -5,9 +5,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Welfare Mission International School',
-    htmlAttrs: {
-      lang: 'en'
-    },
+    htmlAttrs: { lang: 'en' },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -46,6 +44,6 @@ export default {
   },
 
   fontawesome: {
-    icons: { solid: ['faSchool', 'faImage', 'faCircleDown', 'faSquarePhone', 'faBars'] }
+    icons: { solid: [ 'faHashtag', 'faSchool', 'faImage', 'faCircleDown', 'faSquarePhone', 'faBars', 'faLocationDot', 'faEnvelope'] }
   },
 }
