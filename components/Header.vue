@@ -13,8 +13,8 @@
             </NuxtLink>
 
             <a href="http://welfareinternationalschool.org/downloads/prospects.pdf" class="tnav-item">
-            <font-awesome-icon icon="circle-down" style="font-size: 19px" />
-            <span class="fw-bold pe-2">PROSPECTUS /</span>
+                <font-awesome-icon icon="circle-down" style="font-size: 19px" />
+                <span class="fw-bold pe-2">PROSPECTUS /</span>
             </a>
 
             <font-awesome-icon icon="square-phone" style="font-size: 19px" />
@@ -39,13 +39,15 @@
                     <font-awesome-icon class="m-2" v-b-toggle.sidebar-right icon="bars"
                         style="font-size: 30px;color:white;" />
 
-                    <b-sidebar id="sidebar-right" title="Navigation" backdrop right shadow>
+                    <b-sidebar id="sidebar-right" title="NAVIGATION" backdrop right shadow>
                         <div class="px-3 py-2">
-                            <b-button href="/" class="mb-1" variant="light" style="width:100%;">Home</b-button>
-                            <b-button href="/about" class="mb-1" variant="light" style="width:100%;">About Us</b-button>
-                            <b-button href="/feedback" class="mb-1" variant="light" style="width:100%;">Feedback
-                            </b-button>
-                            <b-button href="/tour" class="mb-1" variant="light" style="width:100%;">Tour</b-button>
+                            <NuxtLink to="/" class="btn btn-light w-100 fw-bold">Home</NuxtLink>
+                            <NuxtLink to="/about" class="btn btn-light w-100 fw-bold mt-1">About</NuxtLink>
+                            <NuxtLink to="/feedback" class="btn btn-light w-100 fw-bold mt-1">Feedback</NuxtLink>
+                            <NuxtLink to="/tour" class="btn btn-light w-100 fw-bold mt-1">Bal Mela</NuxtLink>
+                            <NuxtLink to="/contract" class="btn btn-light w-100 fw-bold mt-1">Contact</NuxtLink>
+                            <NuxtLink to="/admission" class="btn btn-light w-100 fw-bold mt-1">Admission</NuxtLink>
+                            <NuxtLink to="/gallery" class="btn btn-light w-100 fw-bold mt-1">Gallery</NuxtLink>
                         </div>
                     </b-sidebar>
                 </div>
@@ -80,7 +82,7 @@
 }
 
 .navbar-brand img {
-    width: 60px;
+    width: 125px;
     position: absolute;
     bottom: 10px;
 }
@@ -138,24 +140,38 @@ div.navbar-nav .active {
     .b-sidebar-header,
     .b-sidebar-body {
         color: white;
-        background-color: #009ed6;
+        background-color: var(--primary);
+        opacity: 0.6;
+        background-image: radial-gradient(#d7d0d0 0.8px, #009ad0 0.8px);
+        background-size: 16px 16px;
     }
 
-    .b-sidebar-body button {
-        color: var(--dark-gray);
+    .b-sidebar-body a, .b-sidebar-body a:hover, .b-sidebar-body a:focus {
+        color: #147a9d;
+        background-color: #5bd2fc;
     }
 
-    .b-sidebar-header button {
+    .b-sidebar-header a {
         border: none;
         background-color: transparent;
         font-size: 30px;
         padding: 0px;
     }
 
-    .b-sidebar-header button svg {
-        color: var(--gray);
+    .b-sidebar-header button {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-weight: 20px;
+    }
+
+    .b-sidebar-header svg {
         font-weight: bold;
         font-size: 30px;
+        background-color: #5bd2fc;
+        border: none;
+        color: white;
+        border-radius: 5px;
     }
 }
 
