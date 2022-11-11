@@ -45,7 +45,7 @@
                             <NuxtLink to="/about" class="btn btn-light w-100 fw-bold mt-1">About</NuxtLink>
                             <NuxtLink to="/feedback" class="btn btn-light w-100 fw-bold mt-1">Feedback</NuxtLink>
                             <NuxtLink to="/tour" class="btn btn-light w-100 fw-bold mt-1">Bal Mela</NuxtLink>
-                            <NuxtLink to="/contract" class="btn btn-light w-100 fw-bold mt-1">Contact</NuxtLink>
+                            <NuxtLink to="/contact" class="btn btn-light w-100 fw-bold mt-1">Contact</NuxtLink>
                             <NuxtLink to="/admission" class="btn btn-light w-100 fw-bold mt-1">Admission</NuxtLink>
                             <NuxtLink to="/gallery" class="btn btn-light w-100 fw-bold mt-1">Gallery</NuxtLink>
                         </div>

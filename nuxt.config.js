@@ -44,6 +44,18 @@ export default {
   },
 
   fontawesome: {
-    icons: { solid: [ 'faHashtag', 'faSchool', 'faImage', 'faCircleDown', 'faSquarePhone', 'faBars', 'faLocationDot', 'faEnvelope'] }
+    icons: {
+      solid: [
+        'faHashtag',
+        'faSchool',
+        'faImage',
+        'faCircleDown',
+        'faSquarePhone',
+        'faBars',
+        'faLocationDot',
+        'faEnvelope'
+      ],
+      brands: ['faInstagram']
+    }
   },
 }

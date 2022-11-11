@@ -9,7 +9,9 @@
         <div id="gallery" class="container bg-stylish rounded pb-3 pt-2">
             <div class="row row-cols-1 row-cols-md-5 g-4">
                 <div class="col" v-for="index in 20">
-                    <a target="_blank" :href="images[index].replace('m.', '.')"><img v-if="images[index + (page * 20)]" style="height:10rem;width: 100%;object-fit:cover;"
+                    <a target="_blank"
+                        :href="images[index].replace('m.jpg', '_d.webp?maxwidth=760&fidelity=grand')"><img
+                            v-if="images[index + (page * 20)]" style="height:10rem;width: 100%;object-fit:cover;"
                             class="rounded img-fluid" :src="images[index + (page * 20)]" :alt="index">
                     </a>
                 </div>
@@ -48,17 +50,17 @@ export default {
     },
     mounted() {
         this.page = this.$route.query.page ? this.$route.query.page - 1 : 0
-        console.log((this.page * 10) + 0)
+        console.log(this.images)
     },
     methods: {
         previous() {
             this.page = this.page - 1
-            window.scrollTo(0,0)
+            window.scrollTo(0, 0)
         },
 
         next() {
             this.page = this.page + 1
-            window.scrollTo(0,0)
+            window.scrollTo(0, 0)
         }
     }
 }
