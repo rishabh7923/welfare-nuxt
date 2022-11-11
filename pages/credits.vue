@@ -5,7 +5,7 @@
             <h1 class="heading">CREDITS</h1>
             <div class="divider"><span></span></div>
 
-            <div class="row bg-stylish p-2 rounded pt-3 pb-3">
+            <div class="row bg-stylish p-2 rounded pt-3 pb-3 credits">
                 <div class="col-md-2">
                     <img class="rounded img-fluid w-100" src="~assets/images/rishabh.jpg">
                 </div>
@@ -21,7 +21,7 @@
                 </div>
             </div>
 
-            <div class="row bg-stylish p-2 rounded pt-3 pb-3 mt-3">
+            <div class="row bg-stylish p-2 rounded pt-3 pb-3 mt-3 credits">
                 <div class="col-md-10">
                     <h3 class="heading">Yash Jaiswal</h3>
                     <div class="divider"><span></span></div>
@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="row bg-stylish p-2 rounded pt-3 pb-3 mt-3">
+            <div class="row bg-stylish p-2 rounded pt-3 pb-3 mt-3 credits">
                 <div class="col-md-2">
                     <img class="rounded img-fluid w-100" src="~assets/images/anurag.jpg">
                 </div>
@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="row bg-stylish p-2 rounded pt-3 pb-3 mt-3">
+            <div class="row bg-stylish p-2 rounded pt-3 pb-3 mt-3 credits">
                 <div class="col-md-10">
                     <h3 class="heading">Yogesh Singh</h3>
                     <div class="divider"><span></span></div>
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <div class="row bg-stylish p-2 rounded pt-3 pb-3 mt-3">
+            <div class="row bg-stylish p-2 rounded pt-3 pb-3 mt-3 credits">
                 <div class="col-md-2">
                     <img class="rounded img-fluid w-100" src="~assets/images/utkarsh.jpg">
                 </div>
@@ -85,7 +85,7 @@
 </template>
 
 <style>
-.row img {
+.credits img {
     width: 10rem;
     object-fit: cover;
     height: 10rem;
