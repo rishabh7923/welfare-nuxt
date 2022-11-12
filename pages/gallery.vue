@@ -8,18 +8,16 @@
 
         <div id="gallery" class="container bg-stylish rounded pb-3 pt-2">
             <div class="row row-cols-1 row-cols-md-5 g-4">
-                <div class="col" v-for="index in 20">
-                    <a target="_blank"
-                        :href="images[index].replace('m.jpg', '_d.webp?maxwidth=760&fidelity=grand')"><img
-                            v-if="images[index + (page * 20)]" style="height:10rem;width: 100%;object-fit:cover;"
-                            class="rounded img-fluid" :src="images[index + (page * 20)]" :alt="index">
+                <div class="col" v-for="(image, index) in imagesLoaded" :key="index">
+                    <a target="_blank" :href="image.replace('m.jpg', '_d.webp?maxwidth=760&fidelity=grand')">
+                        <img style="height:10rem;width: 100%;object-fit:cover;" class="rounded img-fluid"
+                            :src="image" :alt="index">
                     </a>
                 </div>
             </div>
         </div>
         <div class="container pagination justify-content-center pt-3 m-auto p-1">
-            <b-button :disabled="images[(page - 1) * 20] ? false : true" @click="previous">Previous Page</b-button>
-            <b-button :disabled="images[(page + 1) * 20] ? false : true" @click="next">Next Page</b-button>
+            <b-button :disabled="length > images.length" @click="more">MORE</b-button>
         </div>
 
         <Footer />
@@ -44,23 +42,18 @@
 export default {
     data() {
         return {
-            images: require("../assets/gallery.json"),
-            page: null
+            length: 20,
+            images: require("../assets/gallery.json")
         }
     },
-    mounted() {
-        this.page = this.$route.query.page ? this.$route.query.page - 1 : 0
-        console.log(this.images)
-    },
     methods: {
-        previous() {
-            this.page = this.page - 1
-            window.scrollTo(0, 0)
-        },
-
-        next() {
-            this.page = this.page + 1
-            window.scrollTo(0, 0)
+        more() {
+            this.length += 20
+        }
+    },
+    computed: {
+        imagesLoaded() {
+            return this.images.slice(0, this.length);
         }
     }
 }

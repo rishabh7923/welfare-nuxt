@@ -61,3 +61,37 @@ html {
     border-radius: 3px;
     font-family: monospace;
 }
+
+
+
+.animate {
+    animation-duration: 0.75s;
+    animation-delay: 0.5s;
+    animation-name: animate-fade;
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+    animation-fill-mode: backwards;
+  }
+  
+  /* Slide In */
+  .animate.slide { animation-name: animate-slide; }
+  
+  @keyframes animate-slide {
+    0% {
+      opacity: 0;
+      transform: translate(0, 20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    .animate {
+      animation: none !important;
+    }
+  }
+
+
+
+

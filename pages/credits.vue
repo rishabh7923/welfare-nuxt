@@ -8,7 +8,7 @@
             <div class="row bg-stylish p-2 rounded pt-3 pb-3 credits shadow-sm">
                 <div class="col-md-2 card">
                     <img class="rounded w-100" src="~assets/images/rishabh.jpg">
-                    
+
                     <div class="card-img-overlay">
                         <h5 class="card-title badge mb-2">DEVELOPER</h5>
                     </div>
@@ -18,8 +18,10 @@
                     <span class="heading mt-2">Rishabh Yadav</span>
                     <div class="divider mb-2"><span></span></div>
 
-                    <p>Hello I'm a self-taught fullstack developer specialized in discord bot development with great
-                        knowledge, and experience in discord.js, although I'm also great in JavaScript and Node.js. I'm
+                    <p class="mb-2">Hello I'm a self-taught fullstack developer specialized in chat bot and website
+                        development
+                        with great
+                        knowledge, and experience in discord.js, vue.js, nuxt, etc. I'm also great in JavaScript and Node.js. I'm
                         a student and still attending school, I am also creating video content for my audience on my
                         Youtube Channel so that i can learn more things while teaching others :)</p>
                 </div>
@@ -125,8 +127,7 @@
 }
 
 .credits .card {
-    border:none;
+    border: none;
     background-color: transparent;
 }
-
 </style>

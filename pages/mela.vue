@@ -7,8 +7,16 @@
 
             <div class="row">
                 <div class="col-md-8 mb-2">
-                    <iframe class="embed-responsive-item w-100 rounded h-100" 
-                        src="https://www.youtube.com/embed/l6JqYFKLxGo?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=1&autoplay=1&playlist=l6JqYFKLxGo&loop=1" allowfullscreen></iframe>
+                    <b-skeleton-wrapper :loading="loading">
+                        <template #loading>
+                            <b-skeleton-img no-aspect height="30rem"></b-skeleton-img>
+                        </template>
+                        <iframe
+                            class="embed-responsive-item w-100 rounded h-100 animate slide"
+                            src="https://www.youtube.com/embed/mexzlBjMptM?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=1&autoplay=1&playlist=mexzlBjMptM&loop=1&start=9"
+                            allowfullscreen>
+                        </iframe>
+                    </b-skeleton-wrapper>
                 </div>
 
                 <div class="col bg-stylish rounded">
@@ -36,3 +44,17 @@
         <Footer />
     </main>
 </template>
+
+<script>
+export default {
+    data() {
+        return { 
+            loading: true
+        }
+    },
+
+    mounted() {
+        setTimeout(() => this.loading = false, 500)
+    }
+}
+</script>

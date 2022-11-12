@@ -12,7 +12,7 @@
                 <span class="fw-bold pe-2">GALLERY /</span>
             </NuxtLink>
 
-            <a href="http://welfareinternationalschool.org/downloads/prospects.pdf" class="tnav-item">
+            <a target="_blank" href="https://drive.google.com/file/d/10co0tZhBSzeMwlJTx5Up4IKDyikej2U-/view?usp=sharing" class="tnav-item">
                 <font-awesome-icon icon="circle-down" style="font-size: 19px" />
                 <span class="fw-bold pe-2">PROSPECTUS /</span>
             </a>

@@ -34,18 +34,34 @@
 
                         <li class="bg-stylish rounded p-2 mt-2">
                             <font-awesome-icon class="me-1" icon="hashtag" style="font-size: 19px" />
-                            <a href="https://www.facebook.com/welfaremissioninternationalschool/">welfaremissioninternationalschool</a>
+                            <a
+                                href="https://www.facebook.com/welfaremissioninternationalschool/">welfaremissioninternationalschool</a>
                         </li>
                     </ul>
 
                 </div>
 
                 <div class="col-md-7 p-0">
-                    <iframe class="rounded w-100" style="height: 30rem;"
-                        src="https://maps.google.com/maps?q=381%2C%20New%20Shivli%20Rd%2C%20near%20ELDECO%2C%20Jawahar%20Puram%2C%20Masoodabad%2C%20Kanpur%2C%20Uttar%20Pradesh%2020921&t=m&z=10&output=embed&iwloc=near"></iframe>
+                    <b-skeleton-wrapper :loading="loading">
+                        <template #loading>
+                            <b-skeleton-img height="30rem"></b-skeleton-img>
+                        </template>
+
+                        <iframe class="rounded w-100" style="height: 30rem;"
+                                src="https://maps.google.com/maps?q=381%2C%20New%20Shivli%20Rd%2C%20near%20ELDECO%2C%20Jawahar%20Puram%2C%20Masoodabad%2C%20Kanpur%2C%20Uttar%20Pradesh%2020921&t=m&z=10&output=embed&iwloc=near"></iframe>
+                    </b-skeleton-wrapper>
                 </div>
             </div>
         </div>
         <Footer />
     </main>
 </template>
+
+<script>
+export default {
+    data() { 
+        return { loading: true } 
+    },
+    mounted() { setTimeout(() => this.loading = false, 1000) }
+}
+</script>

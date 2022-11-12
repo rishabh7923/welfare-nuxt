@@ -54,8 +54,7 @@ export default {
         'faBars',
         'faLocationDot',
         'faEnvelope'
-      ],
-      brands: ['faInstagram']
+      ]
     }
   },
 }

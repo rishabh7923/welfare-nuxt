@@ -2,25 +2,30 @@
   <main>
     <Header />
     <!-- Slides -->
-    <div id="slides" class="container">
-      <b-carousel class="carousel-fade" id="carousel" :interval="4000" img-width="1024" img-height="480" controls>
+    <div id="slides" class="container animate slide">
+      <b-skeleton-wrapper :loading="loading">
+        <template #loading>
+          <b-skeleton-img no-aspect height="340px"></b-skeleton-img>
+        </template>
 
-        <b-carousel-slide img-alt="Education Matters" img-src="https://i.imgur.com/yJwGLPf.jpg">
-          <h3>EDUCATION MATTERS</h3>
-        </b-carousel-slide>
+        <b-carousel class="carousel-fade" id="carousel" :interval="4000" img-width="1024" img-height="480" controls>
+          <b-carousel-slide img-alt="Education Matters" img-src="https://i.imgur.com/yJwGLPf.jpg">
+            <h3>EDUCATION MATTERS</h3>
+          </b-carousel-slide>
 
-        <b-carousel-slide img-alt="Our Mission" img-src="https://i.imgur.com/3rNlkKc.jpg">
-          <h3>OUR MISSION</h3>
-        </b-carousel-slide>
+          <b-carousel-slide img-alt="Our Mission" img-src="https://i.imgur.com/3rNlkKc.jpg">
+            <h3>OUR MISSION</h3>
+          </b-carousel-slide>
 
-        <b-carousel-slide img-alt="Learn And Grow" img-src="https://i.imgur.com/Rlq7L41.jpg">
-          <h3>LEARN AND GROW</h3>
-        </b-carousel-slide>
-      </b-carousel>
+          <b-carousel-slide img-alt="Learn And Grow" img-src="https://i.imgur.com/Rlq7L41.jpg">
+            <h3>LEARN AND GROW</h3>
+          </b-carousel-slide>
+        </b-carousel>
+      </b-skeleton-wrapper>
     </div>
 
     <!-- About school section -->
-    <div class="mt-3 rounded p-3 row m-auto container bg-stylish" id="about-school">
+    <div class="mt-3 rounded p-3 row m-auto container bg-stylish animate slide" id="about-school">
       <div class="col-md-4">
         <img src="https://i.imgur.com/woRlMqd.jpg" alt="School Main Door" class="img-fluid rounded">
       </div>
@@ -97,7 +102,7 @@
 
         <div class="col-md-3 w-100">
           <div class="card h-100">
-            <img src="https://i.imgur.com/UEOeBb8.jpg" class="card-img" alt="Kids playing"
+            <img src="https://i.imgur.com/yRePI1e.jpg" class="card-img" alt="Kids playing"
               style=" height: 15rem; object-fit: cover;" />
 
             <div class="card-img-overlay text-white text-end" style="opacity:0.8;">
@@ -272,20 +277,15 @@ export default {
   name: 'IndexPage',
   data() {
     return {
+      loading: true,
       images: require("../assets/gallery.json").slice(0, 6),
       notices: [
         { title: "GURUNANAK JAINTI", description: "It is informed that school will remains closed on 08/11/22 , Tuesday on account of Guru Nanak jayanti." },
-        
         { title: "DIWALI", description: "Wishing you all a very Happy Diwali, All of you are informed that from Monday to 27/10/2022, there will be a holiday in the school on the occasion of Diwali, Govardhan Puja and Bhai Dooj from 24/10/2022." },
-        
         { title: "EXTRA CLASS", description: "Tomorrow extra class of physics for section A students will commence from 10:00-12:00  at Welfare mission public school on date 15/10/2022" },
-        
         { title: "TIME CHANGE", description: "Buses will depart at 6:30 am Sharp from Welfare Mission Public School [Tomorrow, dated:1.10.2022 onwards]" },
-        
         { title: "DURGA PUJA", description: "Please note that the school will remain closed on 02.10.2022 to 05.10.2022 on account of  Gandhi jayanti, Durga Puja,Mahanavami and Vijay Dashmi." },
-
         { title: "HEAVY RAINFAILL", description: "Please note that due to heavy rainfall the District Magistrate has issued an official order for the closure of all the schools of Kanpur city ." },
-
         { title: "WINTER", description: "The Winter Uniform will be applicable from 1 November 2022. Therefore every student are required to come in proper Winter Uniform otherwise a disciplinary action may be taken for non compliance." },
       ]
     }
@@ -294,6 +294,9 @@ export default {
     link: [
       { rel: "stylesheet", href: "/css/index.css" }
     ]
+  },
+  mounted() {
+    setTimeout(() => this.loading = false, 200)
   }
 }
 </script>
