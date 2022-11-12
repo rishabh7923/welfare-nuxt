@@ -30,9 +30,9 @@
 
                 <div class="navbar-nav ms-auto">
                     <NuxtLink class="nav-item nav-link" to="/">HOME</NuxtLink>
+                    <NuxtLink class="nav-item nav-link" to="/mela/">MELA</NuxtLink>
                     <NuxtLink class="nav-item nav-link" to="/about/">ABOUT</NuxtLink>
                     <NuxtLink class="nav-item nav-link" to="/feedback/">FEEDBACK</NuxtLink>
-                    <NuxtLink class="nav-item nav-link" to="/tour/">TOUR</NuxtLink>
                     <NuxtLink class="nav-item nav-link" to="/contact/">CONTACT</NuxtLink>
                 </div>
                 <div id="mobile-nav">
@@ -44,7 +44,7 @@
                             <NuxtLink to="/" class="btn btn-light w-100 fw-bold">Home</NuxtLink>
                             <NuxtLink to="/about" class="btn btn-light w-100 fw-bold mt-1">About</NuxtLink>
                             <NuxtLink to="/feedback" class="btn btn-light w-100 fw-bold mt-1">Feedback</NuxtLink>
-                            <NuxtLink to="/tour" class="btn btn-light w-100 fw-bold mt-1">Bal Mela</NuxtLink>
+                            <NuxtLink to="/mela" class="btn btn-light w-100 fw-bold mt-1">Mela</NuxtLink>
                             <NuxtLink to="/contact" class="btn btn-light w-100 fw-bold mt-1">Contact</NuxtLink>
                             <NuxtLink to="/admission" class="btn btn-light w-100 fw-bold mt-1">Admission</NuxtLink>
                             <NuxtLink to="/gallery" class="btn btn-light w-100 fw-bold mt-1">Gallery</NuxtLink>

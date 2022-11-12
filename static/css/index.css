@@ -74,16 +74,6 @@ div.carousel-caption {
 }
 
 /* Extras */
-.badge {
-    font-size: 1rem;
-    color: white;
-    background-color: var(--primary);
-    display: inline;
-    padding: 5px;
-    border-radius: 3px;
-    font-family: monospace;
-}
-
 .button {
     background-color: var(--primary);
     border: none;

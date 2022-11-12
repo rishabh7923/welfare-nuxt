@@ -128,10 +128,10 @@
 
         <div class="col">
           <div class="card h-100">
-            <img src="https://i.imgur.com/2PqkKcw.jpg" class="card-img" alt="National Unity Dat">
+            <img src="https://i.imgur.com/2PqkKcw.jpg" class="card-img" alt="National Unity Day">
 
             <div class="card-img-overlay">
-              <h5 class="card-title badge">Natiional Unity Day</h5>
+              <h5 class="card-title badge">National Unity Day</h5>
             </div>
           </div>
         </div>

@@ -3,7 +3,8 @@
         <Header />
         <div id="overview" class="mt-3 row m-auto container bg-stylish p-3 rounded">
             <div class="col-md-7">
-                <h3 class="underline">WELFARE MISSION INTERNATIONAL</h3>
+                <h3 class="heading">WELFARE MISSION INTERNATIONAL</h3>
+                <div class="divider mb-1"><span></span></div>
                 <p class="mt-3">Welfare Mission Educational Society was founed by CA Raj Shiromani Singh and Mrs. Veena
                     Singh
                     inspired by the
@@ -56,7 +57,8 @@
             </div>
 
             <div class="col-md-8">
-                <h3 class="underline">OBJECTIVES</h3>
+                <h3 class="heading">OBJECTIVES</h3>
+                <div class="divider mb-1"><span></span></div>
                 <p class="pt-2">
                     Welfrare Mission believes in experimental education that is based on continuous and creative process
                     by
@@ -92,7 +94,8 @@
 
         <div class="mt-3 m-auto row container bg-stylish p-3 rounded">
             <div class="col-md-7">
-                <h3 class="underline">SCHOOL CAMPUS</h3>
+                <h3 class="heading">SCHOOL CAMPUS</h3>
+                <div class="divider mb-1"><span></span></div>
                 <p class="pt-3">Campus of Welfare Mission International School is situated at Shivli Road, Near Eldico
                     Jawahar
                     Puram,
