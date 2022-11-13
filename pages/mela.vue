@@ -13,9 +13,9 @@
                         </template>
                         <iframe
                             class="embed-responsive-item w-100 rounded h-100 animate slide"
-                            src="https://www.youtube.com/embed/mexzlBjMptM?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=1&autoplay=1&playlist=mexzlBjMptM&loop=1&start=9"
+                            src="https://www.youtube.com/embed/jpQi9T-SWaY?rel=0&modestbranding=1&autohide=1&mute=1&showinfo=0&controls=1&autoplay=1&playlist=jpQi9T-SWaY&loop=1&start=9"
                             allowfullscreen>
-                        </iframe>
+                        </iframe> 
                     </b-skeleton-wrapper>
                 </div>
 
